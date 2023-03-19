@@ -6,14 +6,7 @@
 
             <div class="right-side">
                 <router-link :class="{'active': currentPage == '/'}" to="/"><span>Home</span></router-link>
-                <router-link :class="{'active': currentPage == '/login'}"  to="/login"  v-if="!user"><span>Account</span></router-link>
-                <a v-else class="account-name" @click="showAccountDropdown = !showAccountDropdown"><span>Account</span></a>
-                <div class="account-dropdown" :class="{'show':showAccountDropdown}">
-                    <ul>
-                        <li v-if="user" ><a @click="hideAccountDropdown('/me/dashboard')" >Dashboard</a></li>
-                        <li v-if="user" ><a @click="logout()" >Log Out</a></li>
-                    </ul>
-                </div>
+                <router-link :class="{'active': currentPage == '/posts'}"  to="/posts"><span>Posts</span></router-link>
             </div>
         </nav>
     </header>

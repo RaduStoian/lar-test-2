@@ -1,15 +1,23 @@
 <template>
     <div class="home-page">
 
+        <PostForm />
+
     </div>
 
 </template>
 
 <script>
+import PostForm from '../utility/post-form';
+
 import { mapGetters, mapActions } from 'vuex';
 
 export default {
     name: 'home',
+
+        components: {
+            PostForm,
+        },
 
     data: function() {
         return {

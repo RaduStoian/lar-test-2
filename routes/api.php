@@ -14,6 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::prefix('/post')->group(function(){
+    Route::post('/get-post-data', 'PostController@getPostData');
+    Route::get('/get-posts', 'PostController@getPosts');
+    Route::post('/create-post', 'PostController@createPost');
+});
+
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
