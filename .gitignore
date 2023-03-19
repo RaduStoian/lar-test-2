@@ -7,7 +7,7 @@
 /public/js/app.js.LICENSE.txt
 /storage/*.key
 /vendor
-.env
+
 .htaccess
 .env.backup
 .env.example
