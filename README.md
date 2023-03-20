@@ -16,6 +16,7 @@ clone the repo locally
 
 `composer install` \
 `npm install` \
+`php artisan migrate`- to add the table in DB (make sure your DB is properly connected at this point)\
 `npm run watch` - to compile the frontend Vue.js files \
 `php artisan storage:link`- to link to storage folder where the images are stored\
 `php artisan optimize`\
